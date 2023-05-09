@@ -1,0 +1,12 @@
+v=0:0.01:10; 
+alpha=1; beta=1; 
+ypdf=gampdf(v,alpha,beta); 
+plot (v,ypdf,'k'); hold on; 
+axis([0 10 0 1.2]);
+alpha=2; beta=1; 
+ypdf=gampdf(v,alpha,beta); 
+plot (v,ypdf,'--k'); hold on; 
+alpha=4; beta=1; 
+ypdf=gampdf(v,alpha, beta); 
+plot (v,ypdf,':k'); hold on; 
+xlabel('values'); title('gamma-type PDFs');
