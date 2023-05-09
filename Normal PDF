@@ -1,0 +1,8 @@
+v=-3:0.01:3; 
+mu=0; sigma=1; 
+ypdf=normpdf(v,mu, sigma); 
+plot (v,ypdf,'k'); 
+hold on; 
+axis([-3 3.0 0.5]);
+xlabel ('values'); 
+title('normal PDF');
