@@ -1,0 +1,12 @@
+fy=300;
+wy=2*pi*fy;
+fs=6000; 
+tiv=1/fs;
+t=0:tiv:(5-tiv);
+y=sin(wy*t);
+sound(y,fs);
+t=0:tiv:(0.01-tiv);
+y=sin(wy*t);
+plot(t,y,'k');
+axis([0 0.01 -1.5 1.5]);
+xlabel('seconds'); title('sine signal');
