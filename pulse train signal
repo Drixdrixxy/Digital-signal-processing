@@ -1,0 +1,14 @@
+fy=1;
+     wy=2*pi*fy; 
+      Ty=1/fy; 
+      N=256; 
+      fs=N*fy; 
+      tiv=1/fs; 
+      t=0:tiv:(Ty-tiv); 
+      y=-sawtooth(wy*t,0.5); 
+      fou=fft(y,fs); 
+      hmag=real(fou); ah=hmag/N;
+      stem(0:9,ah(1:10)); hold on; 
+      plot([0 10],[0 0],'k'); 
+      xlabel('Hz'); 
+      title('triangular signal harmonics'); 
