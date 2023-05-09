@@ -1,0 +1,11 @@
+fs=100; 
+tiv=1/fs; 
+t=0:tiv:(2-tiv); 
+N=length(t); 
+yr=randn(N,1); 
+ys=sin(15*2*pi*t); 
+y=ys+yr'; 
+plot(t,y,'k'); 
+axis([0 2 -3 3]);
+xlabel('seconds'); 
+title('sine+noise signal');
