@@ -1,0 +1,11 @@
+fy=1;
+wy=2*pi*fy;
+Ty=1/fy;
+N=256;
+fs=N*fy; 
+tiv=1/fs;
+t=0:tiv:((3*Ty)-tiv);
+y3=-sawtooth(wy*t,0.5);
+plot(t,y3,'k');
+xlabel('seconds'); 
+title('triangular signal (3 periods)');
