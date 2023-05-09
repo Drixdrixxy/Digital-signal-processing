@@ -1,0 +1,9 @@
+fy=100;
+wy=2*pi*fy; duy=0.03;
+fs=20000; tiv=1/fs;
+t=0:tiv:(duy-tiv);
+y=sawtooth(wy*t);
+plot(t,y,'k');
+figure axis([0 duy -1.5 1.5]);
+xlabel('seconds');
+title('sawtooth signal');
