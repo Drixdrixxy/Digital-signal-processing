@@ -1,0 +1,14 @@
+fy=1;
+wy=2*pi*fy;
+Ty=1/fy;
+N=256;
+fs=N*fy;
+tiv=1/fs;
+t=0:tiv:((3*Ty)-tiv);
+W=20; 
+y1=zeros(256,1); y1(1:W)=1; 
+y1((256-W):256)=1;
+yt=cat(1,y1,y1,y1);
+plot(t,yt,'k');
+xlabel('seconds'); 
+title('pulse train signal (3 periods)'); 
