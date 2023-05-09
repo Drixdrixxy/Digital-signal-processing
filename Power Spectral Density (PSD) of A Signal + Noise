@@ -1,0 +1,12 @@
+fs=100; 
+tiv=1/fs; 
+t=0:tiv:(40.96-tiv); 
+N=length(t); 
+yr=randn(N,1); 
+ys=sin(15*2*pi*t); 
+y=ys+yr'; 
+nfft=256; 
+window=hanning (256) ; 
+numoverlap=128; 
+pwelch (y, window, numoverlap, nfft, fs);
+title('PSD of a sinesnoise signal');
