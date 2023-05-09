@@ -1,0 +1,12 @@
+fy=1;
+wy=2*pi*fy;
+Ty=1/fy; 
+N=256;
+fs=N*fy;
+tiv=1/fs;
+t=-((6*Ty)-tiv):tiv:((6*Ty)-tiv);
+y=sinc(t);
+plot(t,y,'k'); hold on;
+plot([0 0],[-0.4 1.2],'k');
+xlabel('seconds'); 
+title('sinc function'); 
