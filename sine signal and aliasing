@@ -1,0 +1,16 @@
+fy=3; 
+wy=2*pi*fy;
+fs=100; tiv=1/fs;
+t=0:tiv:(3-tiv);
+y=sin(wy*t);
+subplot(2,1,1); plot(t,y,'k');
+axis([0 3 -1.5 1.5]); 
+title('3Hz sine signal');
+ylabel('fs=100');
+fs=4; tiv=1/fs;
+t=0:tiv:(3-tiv); 
+y=sin(wy*t);
+subplot(2,1,2); plot(t,y,'-kd');
+axis([0 3 -1.5 1.5]);
+xlabel('seconds');
+ylabel('fs=4'); 
