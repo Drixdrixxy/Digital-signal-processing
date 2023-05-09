@@ -1,0 +1,9 @@
+fs=100; 
+tiv=1/fs;
+t=0 : tiv: (2-tiv);
+N=length (t);
+y=rand (N,1);
+plot (t,y,'-k');
+axis ([0 2 0 1.2]);
+xlabel ('seconds');
+title ('random signal with uniform PDF'); 
