@@ -1,0 +1,8 @@
+v=-5:0.01:5; 
+nu=3; 
+ypdf=tpdf(v,nu); 
+plot(v,ypdf,'k'); 
+hold on; 
+axis([-5 5 0 0.4]);
+xlabel('values'); 
+title('Students PDF');
