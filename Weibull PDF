@@ -1,0 +1,7 @@
+v=0:0.01:2.5;
+alpha=1; 
+m=3ypdf=wblpdf(v,alpha,m); 
+plot(v,ypdf,'k'); hold on; 
+axis([0 2.5 0 1.2]);
+xlabel('values'); 
+title('Weibull PDF');
